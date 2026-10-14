@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brick Breaker</title>
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="base.css">
+<style>
+  main{max-width:40rem}
+  canvas{display:block;width:100%;max-width:560px;aspect-ratio:4/3;margin:.5rem 0;border-radius:.75rem;background:var(--card);border:1px solid var(--line);touch-action:none;cursor:none}
+</style>
+</head>
+<body>
+<main>
+  <h1>Brick Breaker</h1>
+  <p class="sub">Move with the mouse, touch or arrow keys. Space, click or tap launches the ball.</p>
+  <div class="stats"><span>Score <b id="score">0</b></span><span>Lives <b id="lives">3</b></span><span>Level <b id="level">1</b></span><span>Best <b id="best">0</b></span></div>
+  <canvas id="game" width="560" height="420" aria-label="Brick Breaker game"></canvas>
+  <p class="msg" id="msg" role="status">Click, tap or press Space to launch.</p>
+  <div class="row"><button id="new" class="primary">New game</button></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
